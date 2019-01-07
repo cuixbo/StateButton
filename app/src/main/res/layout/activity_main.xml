@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/background_dark">
+    android:background="@android:color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +21,42 @@
             android:foreground="?selectableItemBackground"
             android:text="扩展属性测试"/>
 
-        <deadline.statebutton.StateButton
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="change text color"/>
+        <!--<android.support.design.button.MaterialButton
+            android:id="@+id/material_button"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="MaterialButton"
+            app:cornerRadius="4dp"/>-->
+        <com.xbc.widget.StateButton
+            android:id="@+id/text_dj"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="change text color"
+            app:background_disabled="#EAF1FE"
+            app:background_normal="#588AF2"
+            app:background_pressed="#74A1FF"
+            app:radius="8dp"
+            app:textColor_disabled="@android:color/white"
+            app:textColor_normal="@android:color/white"
+            app:textColor_pressed="@android:color/white"/>
+
+        <com.xbc.widget.StateButton
             android:id="@+id/text_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,15 +64,14 @@
             android:layout_margin="10dp"
             android:padding="10dp"
             android:text="change text color"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:normalTextColor="@android:color/white"
-            app:pressedBackgroundColor="@color/colorPrimary"
-            app:pressedTextColor="@android:color/holo_red_light"
-            app:unableBackgroundColor="@color/colorPrimary"
-            app:unableTextColor="@android:color/holo_orange_dark"/>
+            app:background_disabled="@color/colorPrimary"
+            app:background_normal="@color/colorPrimary"
+            app:background_pressed="@color/colorPrimary"
+            app:textColor_disabled="@android:color/holo_orange_dark"
+            app:textColor_normal="@android:color/white"
+            app:textColor_pressed="@android:color/holo_red_light"/>
 
-
-        <deadline.statebutton.StateButton
+        <com.xbc.widget.StateButton
             android:id="@+id/background_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,12 +80,11 @@
             android:padding="10dp"
             android:text="change background"
             android:textColor="@android:color/white"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:unableBackgroundColor="@android:color/holo_red_light"/>
+            app:background_disabled="@android:color/holo_red_light"
+            app:background_normal="@color/colorPrimary"
+            app:background_pressed="@color/colorPrimaryDark"/>
 
-
-        <deadline.statebutton.StateButton
+        <com.xbc.widget.StateButton
             android:id="@+id/radius_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,12 +93,12 @@
             android:padding="10dp"
             android:text="with radius"
             android:textColor="@android:color/white"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:radius="10dp"
-            app:unableBackgroundColor="@android:color/holo_red_light"/>
+            app:background_disabled="@android:color/holo_red_light"
+            app:background_normal="@color/colorPrimary"
+            app:background_pressed="@color/colorPrimaryDark"
+            app:radius="10dp"/>
 
-        <deadline.statebutton.StateButton
+        <com.xbc.widget.StateButton
             android:id="@+id/round_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -76,13 +107,13 @@
             android:padding="10dp"
             android:text="round radius"
             android:textColor="@android:color/white"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:round="true"
+            app:background_disabled="@android:color/holo_red_light"
+            app:background_normal="@color/colorPrimary"
+            app:background_pressed="@color/colorPrimaryDark"
             app:radius="2dp"
-            app:unableBackgroundColor="@android:color/holo_red_light"/>
+            app:round="true"/>
 
-        <deadline.statebutton.StateButton
+        <com.xbc.widget.StateButton
             android:id="@+id/different_radius_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -91,11 +122,11 @@
             android:padding="10dp"
             android:text="different_radius"
             android:textColor="@android:color/white"
-            app:normalBackgroundColor="@color/colorPrimary"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:unableBackgroundColor="@android:color/holo_red_light"/>
+            app:background_disabled="@android:color/holo_red_light"
+            app:background_normal="@color/colorPrimary"
+            app:background_pressed="@color/colorPrimaryDark"/>
 
-        <deadline.statebutton.StateButton
+        <com.xbc.widget.StateButton
             android:id="@+id/dash_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,19 +135,19 @@
             android:padding="10dp"
             android:text="with dash"
             app:radius="5dp"
-            app:strokeDashGap="5dp"
-            app:strokeDashWidth="5dp"
-            app:normalStrokeColor="@android:color/white"
-            app:normalStrokeWidth="2dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedStrokeColor="@android:color/holo_red_light"
-            app:pressedStrokeWidth="2dp"
-            app:pressedTextColor="@android:color/holo_red_light"
-            app:unableStrokeColor="@android:color/holo_orange_dark"
-            app:unableStrokeWidth="2dp"
-            app:unableTextColor="@android:color/holo_orange_dark"/>
+            app:stroke_color_disabled="@android:color/holo_orange_dark"
+            app:stroke_color_normal="@android:color/white"
+            app:stroke_color_pressed="@android:color/holo_red_light"
+            app:stroke_dash_gap="5dp"
+            app:stroke_dash_width="5dp"
+            app:stroke_width_disabled="2dp"
+            app:stroke_width_normal="2dp"
+            app:stroke_width_pressed="2dp"
+            app:textColor_disabled="@android:color/holo_orange_dark"
+            app:textColor_normal="@android:color/white"
+            app:textColor_pressed="@android:color/holo_red_light"/>
 
-        <deadline.statebutton.StateButton
+        <com.xbc.widget.StateButton
             android:id="@+id/stroke_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,17 +156,17 @@
             android:padding="10dp"
             android:text="with stroke"
             app:radius="5dp"
-            app:normalStrokeColor="@android:color/white"
-            app:normalStrokeWidth="2dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedStrokeColor="@android:color/holo_red_light"
-            app:pressedStrokeWidth="2dp"
-            app:pressedTextColor="@android:color/holo_red_light"
-            app:unableStrokeColor="@android:color/holo_orange_dark"
-            app:unableStrokeWidth="2dp"
-            app:unableTextColor="@android:color/holo_orange_dark"/>
+            app:stroke_color_disabled="@android:color/holo_orange_dark"
+            app:stroke_color_normal="@android:color/white"
+            app:stroke_color_pressed="@android:color/holo_red_light"
+            app:stroke_width_disabled="2dp"
+            app:stroke_width_normal="2dp"
+            app:stroke_width_pressed="2dp"
+            app:textColor_disabled="@android:color/holo_orange_dark"
+            app:textColor_normal="@android:color/white"
+            app:textColor_pressed="@android:color/holo_red_light"/>
 
-        <deadline.statebutton.StateButton
+        <com.xbc.widget.StateButton
             android:id="@+id/stroke_background_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -143,16 +174,16 @@
             android:layout_margin="10dp"
             android:padding="10dp"
             android:text="keep stroke"
+            app:background_pressed="@color/colorPrimaryDark"
             app:radius="5dp"
-            app:normalStrokeColor="@android:color/white"
-            app:normalStrokeWidth="2dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedStrokeWidth="2dp"
-            app:pressedStrokeColor="@android:color/white"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:pressedTextColor="@android:color/white"/>
+            app:stroke_color_normal="@android:color/white"
+            app:stroke_color_pressed="@android:color/white"
+            app:stroke_width_normal="2dp"
+            app:stroke_width_pressed="2dp"
+            app:textColor_normal="@android:color/white"
+            app:textColor_pressed="@android:color/white"/>
 
-        <deadline.statebutton.StateButton
+        <com.xbc.widget.StateButton
             android:id="@+id/stroke_background_test2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -160,14 +191,14 @@
             android:layout_margin="10dp"
             android:padding="10dp"
             android:text="stroke_background"
+            app:background_pressed="@color/colorPrimaryDark"
             app:radius="5dp"
-            app:normalStrokeColor="@android:color/white"
-            app:normalStrokeWidth="2dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:pressedTextColor="@android:color/white"/>
+            app:stroke_color_normal="@android:color/white"
+            app:stroke_width_normal="2dp"
+            app:textColor_normal="@android:color/white"
+            app:textColor_pressed="@android:color/white"/>
 
-        <deadline.statebutton.StateButton
+        <com.xbc.widget.StateButton
             android:id="@+id/stroke_background_animation_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -175,12 +206,12 @@
             android:layout_margin="10dp"
             android:padding="10dp"
             android:text="stroke_background_animation"
+            app:animation_duration="200"
+            app:background_pressed="@color/colorPrimaryDark"
             app:radius="5dp"
-            app:animationDuration="200"
-            app:normalStrokeColor="@android:color/white"
-            app:normalStrokeWidth="2dp"
-            app:normalTextColor="@android:color/white"
-            app:pressedBackgroundColor="@color/colorPrimaryDark"
-            app:pressedTextColor="@android:color/white"/>
+            app:stroke_color_normal="@android:color/white"
+            app:stroke_width_normal="2dp"
+            app:textColor_normal="@android:color/white"
+            app:textColor_pressed="@android:color/white"/>
     </LinearLayout>
 </ScrollView>

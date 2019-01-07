@@ -1,4 +1,5 @@
-package deadline.statebutton;
+package com.xbc.widget.statebutton;
+
 
 import android.support.annotation.ColorInt;
 import android.support.annotation.FloatRange;

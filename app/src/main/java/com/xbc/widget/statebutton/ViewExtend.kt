@@ -1,10 +1,11 @@
-package deadline.statebutton
+package com.xbc.widget.statebutton
 
 import android.content.res.ColorStateList
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.StateListDrawable
 import android.support.annotation.NonNull
 import android.support.v4.view.ViewCompat
+
 import android.view.View
 import android.widget.TextView
 
@@ -15,11 +16,12 @@ import android.widget.TextView
 fun View.setState(@NonNull config: StateConfig) {
 
     //pressed, focused, normal, unable
-    val states = arrayOf(intArrayOf(android.R.attr.state_enabled, android.R.attr.state_pressed),
-                        intArrayOf(android.R.attr.state_enabled, android.R.attr.state_focused),
-                        intArrayOf(-android.R.attr.state_enabled),
-                        intArrayOf(android.R.attr.state_enabled))
-
+    val states = arrayOf(
+            intArrayOf(android.R.attr.state_enabled, android.R.attr.state_pressed),
+            intArrayOf(android.R.attr.state_enabled, android.R.attr.state_focused),
+            intArrayOf(-android.R.attr.state_enabled),
+            intArrayOf(android.R.attr.state_enabled)
+    )
 
     val mNormalBackground = GradientDrawable()
     val mPressedBackground = GradientDrawable()

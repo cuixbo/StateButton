@@ -1,11 +1,14 @@
-package deadline.statebutton
+package com.xbc.widget
 
 import android.graphics.Color
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import com.xbc.widget.statebutton.R
+import com.xbc.widget.statebutton.StateConfig
+import com.xbc.widget.statebutton.setState
 
 class MainActivity : AppCompatActivity() {
 

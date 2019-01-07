@@ -1,4 +1,4 @@
-package deadline.statebutton;
+package com.xbc.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -7,6 +7,9 @@ import android.graphics.drawable.StateListDrawable;
 import android.support.annotation.IntRange;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
+
+import com.xbc.widget.statebutton.R;
+
 
 /**
  * Created by deadline on 2017/1/11.
@@ -53,12 +56,12 @@ public class StateImageView extends AppCompatImageView {
 
         TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.StateImageView);
 
-        mNormalDrawable = a.getDrawable(R.styleable.StateImageView_normalBackground);
-        mPressedDrawable = a.getDrawable(R.styleable.StateImageView_pressedBackground);
-        mUnableDrawable = a.getDrawable(R.styleable.StateImageView_unableBackground);
+        mNormalDrawable = a.getDrawable(R.styleable.StateImageView_background_normal);
+        mPressedDrawable = a.getDrawable(R.styleable.StateImageView_background_pressed);
+        mUnableDrawable = a.getDrawable(R.styleable.StateImageView_background_disabled);
         setStateBackground(mNormalDrawable, mPressedDrawable, mUnableDrawable);
 
-        mDuration = a.getInteger(R.styleable.StateImageView_AnimationDuration, mDuration);
+        mDuration = a.getInteger(R.styleable.StateImageView_animation_duration, mDuration);
         setAnimationDuration(mDuration);
         a.recycle();
     }
