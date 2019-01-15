@@ -6,7 +6,7 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        applicationId "com.com.xbc.widget.statebutton"
+        applicationId "com.com.xbc.widget.statebutton.demo"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 102

@@ -1,30 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--background color-->
     <attr name="background_normal" format="color|reference"/>
     <attr name="background_pressed" format="color|reference"/>
     <attr name="background_disabled" format="color|reference"/>
+    <!--text color-->
+    <attr name="textColor_normal" format="color|reference"/>
+    <attr name="textColor_pressed" format="color|reference"/>
+    <attr name="textColor_disabled" format="color|reference"/>
+    <!--stroke width and color, dash width, dash gap-->
+    <attr name="stroke_dash_width" format="dimension|reference"/>
+    <attr name="stroke_dash_gap" format="dimension|reference"/>
+    <attr name="stroke_width_normal" format="dimension|reference"/>
+    <attr name="stroke_width_pressed" format="dimension|reference"/>
+    <attr name="stroke_width_disabled" format="dimension|reference"/>
+    <attr name="stroke_color_normal" format="color|reference"/>
+    <attr name="stroke_color_pressed" format="color|reference"/>
+    <attr name="stroke_color_disabled" format="color|reference"/>
+    <!--background radius-->
+    <attr name="radius" format="dimension|reference"/>
+    <attr name="round" format="boolean|reference"/>
+    <!--background radius-->
     <attr name="animation_duration" format="integer|reference"/>
     <declare-styleable name="StateButton">
         <!--text color-->
-        <attr name="textColor_normal" format="color|reference"/>
-        <attr name="textColor_pressed" format="color|reference"/>
-        <attr name="textColor_disabled" format="color|reference"/>
+        <attr name="textColor_normal"/>
+        <attr name="textColor_pressed"/>
+        <attr name="textColor_disabled"/>
         <!--stroke width and color, dash width, dash gap-->
-        <attr name="stroke_dash_width" format="dimension|reference"/>
-        <attr name="stroke_dash_gap" format="dimension|reference"/>
-        <attr name="stroke_width_normal" format="dimension|reference"/>
-        <attr name="stroke_width_pressed" format="dimension|reference"/>
-        <attr name="stroke_width_disabled" format="dimension|reference"/>
-        <attr name="stroke_color_normal" format="color|reference"/>
-        <attr name="stroke_color_pressed" format="color|reference"/>
-        <attr name="stroke_color_disabled" format="color|reference"/>
+        <attr name="stroke_dash_width"/>
+        <attr name="stroke_dash_gap"/>
+        <attr name="stroke_width_normal"/>
+        <attr name="stroke_width_pressed"/>
+        <attr name="stroke_width_disabled"/>
+        <attr name="stroke_color_normal"/>
+        <attr name="stroke_color_pressed"/>
+        <attr name="stroke_color_disabled"/>
         <!--background color-->
         <attr name="background_normal"/>
         <attr name="background_pressed"/>
         <attr name="background_disabled"/>
         <!--background radius-->
-        <attr name="radius" format="dimension|reference"/>
-        <attr name="round" format="boolean|reference"/>
+        <attr name="radius"/>
+        <attr name="round"/>
         <!--animation duration-->
         <attr name="animation_duration"/>
     </declare-styleable>

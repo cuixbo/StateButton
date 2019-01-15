@@ -6,8 +6,8 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import com.xbc.widget.statebutton.R
 import com.xbc.widget.statebutton.StateConfig
+import com.xbc.widget.statebutton.demo.R
 
 class MainActivity : AppCompatActivity() {
 
