@@ -1,13 +1,34 @@
 <resources>
-
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
-        <item name="android:statusBarColor">@color/colorPrimary</item>
+
+        <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="buttonCornerRadius">8dp</item>
+        <item name="colorButtonStrokeNormal">@color/colorAccent</item>
+        <item name="buttonStrokeWidth">4dp</item>
+
+    </style>
+
+    <style name="RedButton" parent="AppTheme">
+        <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
+        <item name="android:background">@drawable/btn_default_material</item>
+        <item name="colorButtonNormal">@android:color/holo_orange_light</item>
+        <item name="buttonCornerRadius">8dp</item>
+        <item name="colorButtonStrokeNormal">@color/colorAccent</item>
+        <item name="buttonStrokeWidth">4dp</item>
+    </style>
+
+    <style name="BlueButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/btn_default_material</item>
+        <item name="colorButtonNormal">@android:color/holo_orange_light</item>
+        <item name="buttonCornerRadius">8dp</item>
+        <item name="colorButtonStrokeNormal">@color/colorAccent</item>
+        <item name="buttonStrokeWidth">4dp</item>
     </style>
 
 </resources>

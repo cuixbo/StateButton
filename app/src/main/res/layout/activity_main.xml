@@ -22,11 +22,22 @@
             android:text="扩展属性测试"/>
 
         <Button
+            style="@style/BlueButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorButtonStrokeNormal"
+            android:padding="10dp"
+            android:text="Material"/>
+
+        <Button
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_margin="10dp"
             android:padding="10dp"
+            android:enabled="true"
+            android:textColor="@color/colorPrimary"
             android:text="change text color"/>
         <!--<android.support.design.button.MaterialButton
             android:id="@+id/material_button"

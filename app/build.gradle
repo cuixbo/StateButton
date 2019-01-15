@@ -2,6 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+def sock='"codkd"'
+
 android {
     compileSdkVersion 28
 
@@ -11,6 +13,10 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+
+        buildConfigField "String", "SOCKET_ONLINE", sock
+        buildConfigField "String", "SOCKET_ONLINE2", rootProject.ext.vv
+
     }
     buildTypes {
         release {
