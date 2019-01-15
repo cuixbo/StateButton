@@ -8,7 +8,6 @@ import android.widget.TextView
 import android.widget.Toast
 import com.xbc.widget.statebutton.R
 import com.xbc.widget.statebutton.StateConfig
-import com.xbc.widget.statebutton.setState
 
 class MainActivity : AppCompatActivity() {
 
@@ -53,12 +52,12 @@ class MainActivity : AppCompatActivity() {
         tvExtend = findViewById(R.id.tv_extend)
         tvExtend.setOnClickListener { Toast.makeText(this@MainActivity, "lalala", Toast.LENGTH_SHORT).show() }
 
-        tvExtend.setState(StateConfig.newBuilder()
-                .setNormalBackgroundColor(Color.GRAY)
-                .setPressedBackgroundColor(Color.DKGRAY)
-                .setNormalTextColor(Color.WHITE)
-                .setPressedTextColor(Color.parseColor("#80ffffff"))
-                .setRadius(20f)
-                .build())
+//        tvExtend.setState(StateConfig.newBuilder()
+//                .setNormalBackgroundColor(Color.GRAY)
+//                .setPressedBackgroundColor(Color.DKGRAY)
+//                .setNormalTextColor(Color.WHITE)
+//                .setPressedTextColor(Color.parseColor("#80ffffff"))
+//                .setRadius(20f)
+//                .build())
     }
 }
